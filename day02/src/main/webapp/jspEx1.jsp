@@ -9,8 +9,8 @@
 <body>
 <%
 	//스크립트릿: JSP 문서 안에 JAVA 코드를 넣을 때 사용
-	int num1 = 20;
-	int num2 = 30;
+	int num1 = Integer.parseInt(request.getParameter("num1"));
+	int num2 = Integer.parseInt(request.getParameter("num2"));
 	int sum = num1+num2;
 	out.println(num1 + "+" + num2 + "=" + sum);
 %>
