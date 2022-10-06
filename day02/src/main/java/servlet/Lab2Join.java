@@ -47,11 +47,11 @@ public class Lab2Join extends HttpServlet {
 		out.print("혈액형: " + bt.substring(0,bt.length()-1) + "<br>");
 		out.print("생일: " + birth + "<br>");
 		out.print("취미: ");
-		try {
+		if(hobby != null) {
 			for(String i:hobby) {
 				out.print(i + " ");
 			}
-		} catch(Exception e) { }
+		}
 		out.print("<br>좋아하는 색: " + color + "<br>");
 		out.print("<div style=\"width:100px; height:100px ;background:"+color+";\"></div>");
 		out.print("남기고 싶은 말 :" + writes + "<br>");
