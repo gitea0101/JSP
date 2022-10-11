@@ -7,17 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="loginProcess2.jsp" method="post">
-<div style="width: 300px; text-align:center">
 <fieldset>
 <legend>로그인</legend>
-
-<input type="text" name="id" placeholder="아이디를 입력해 주세요." ><br>
-<input type="password" name="psw" placeholder="비밀번호를 입력해 주세요."><br>
+<form action="Login.jsp" method="post">
+<input type="text" name="id" placeholder="아이디 입력">
+<input type="password" name="pwd" placeholder="비밀번호 입력">
 <input type="submit" value="로그인">
-
-</fieldset>
-</div>
 </form>
+</fieldset>
 </body>
 </html>

@@ -29,11 +29,13 @@
 	}
 	
 	String grade(double ag){
-		if((100 >= ag) && (ag >= 95)){return "A+";}
-		else if((95 > ag) && ( ag >= 90)){return "A";}
-		else if((90 > ag) && ( ag >= 85)){return "B+";}
-		else if((85 > ag) && ( ag >= 80)){return "B";}
-		else if((80 > ag) && ( ag >= 0)){return "F";}
+		// 변수는 왼쪽에
+		if((ag <=100) && (ag >= 95)){return "A+";}
+		// 100이상의 값은 이미 검사함
+		else if(ag >= 90){return "A";}
+		else if(ag >= 85){return "B+";}
+		else if(ag >= 80){return "B";}
+		else if(ag >= 0){return "F";}
 		else{return "?";}
 	}
 
@@ -58,7 +60,7 @@
 <td><%= average %></td>
 </tr>
 <tr><td>학점</td>
-<td><%= grade(average) %></td>
+<td><b><%= grade(average) %></b></td>
 </tr>
 </table>
 </body>
