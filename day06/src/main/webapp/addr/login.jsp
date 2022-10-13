@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%	
+	<%
 	String id = request.getParameter("id");
 	String pwd = request.getParameter("pwd");
 	

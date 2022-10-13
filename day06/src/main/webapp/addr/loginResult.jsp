@@ -32,10 +32,13 @@
 </table>
 </div>
 <%-- b가 관리자면 나머지 출력 --%>
-<%if (b.getGrade()){ %>
+<%
+	if(b==null){
+		response.sendRedirect("main.jsp");
+	}else if (b.getGrade()){ %>
 <HR>
 <a href="addr_form.html">주소추가</a><P>
 <%} %>
-<a href="main.jsp">메인 으로</a>
+<a href="logout.jsp">로그 아웃</a>
 </body>
 </html>
