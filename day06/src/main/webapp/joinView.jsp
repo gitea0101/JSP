@@ -9,7 +9,7 @@
 </head>
 <body>
 <%
- 	//Member member = (Member)request.getAttribute("member");
+//Member member = (Member)request.getAttribute("member");
 %>
 <!-- request 객체에 저장된 값을 getProperty 액션 태그 이용해여 가져오기 -->
 <jsp:useBean id="member" class="beans.Member" scope="request"/>
